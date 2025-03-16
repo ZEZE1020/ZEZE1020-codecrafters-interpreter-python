@@ -21,15 +21,15 @@ def main():
 
         #Uncomment this block to pass the first stage
         if file_contents:
-         raise NotImplementedError("Scanner not implemented")
+          raise NotImplementedError("Scanner not implemented")
         else:
          # Placeholder, remove this line when implementing the scanner
 
             for char in file_contents:
                 if char == "(":
                     print("LEFT_PAREN ( null")
-            if char == ")":
-                print("RIGHT_PAREN ) null")
+                elif char == ")":
+                    print("RIGHT_PAREN ) null")
     print("EOF  null")
 
 if __name__ == "__main__":
