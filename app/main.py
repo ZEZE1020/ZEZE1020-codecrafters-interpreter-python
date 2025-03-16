@@ -16,20 +16,20 @@ def main():
     with open(filename) as file:
         file_contents = file.read()
 
-    # You can use print statements as follows for debugging, they'll be visible when running tests.
-    print("Logs from your program will appear here!", file=sys.stderr)
+        # You can use print statements as follows for debugging, they'll be visible when running tests.
+        print("Logs from your program will appear here!", file=sys.stderr)
 
-    #Uncomment this block to pass the first stage
-    if file_contents:
-        raise NotImplementedError("Scanner not implemented")
-    else:
-         print("EOF  null") # Placeholder, remove this line when implementing the scanner
+        #Uncomment this block to pass the first stage
+        if file_contents:
+         raise NotImplementedError("Scanner not implemented")
+        else:
+            print("EOF  null") # Placeholder, remove this line when implementing the scanner
 
-    for char in file_contents:
-        if char == "(":
-            print("LEFT_PAREN ( null")
-        if char == ")":
-            print("RIGHT_PAREN ) null")
+        for char in file_contents:
+            if char == "(":
+                print("LEFT_PAREN ( null")
+            if char == ")":
+                print("RIGHT_PAREN ) null")
     print("EOF  null")
 
 if __name__ == "__main__":
