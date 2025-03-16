@@ -25,10 +25,10 @@ def main():
     else:
          print("EOF  null") # Placeholder, remove this line when implementing the scanner
 
-    for c in file_contents:
-        if c == "(":
+    for char in file_contents:
+        if char == "(":
             print("LEFT_PAREN ( null")
-        if c == ")":
+        if char == ")":
             print("RIGHT_PAREN ) null")
     print("EOF  null")
 
